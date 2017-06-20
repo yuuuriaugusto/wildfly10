@@ -2,7 +2,7 @@ FROM centos
 
 RUN yum -y update
 RUN yum install -y nano vim net-tools
-RUN yum install -y Wildfly 10.0.0.Final
+RUN yum install -y Wildfly 10.1.0.Final
 
 ADD wildfly-install.sh /bin/bash/wildfly-install.sh
 RUN chmor  +x /bin/bash/wildfly-install.sh
